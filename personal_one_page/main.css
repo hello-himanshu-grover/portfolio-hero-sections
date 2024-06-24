@@ -1,0 +1,78 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box  ;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 0.01rem;
+}
+img {
+    max-width: 100%;
+}
+.section1 {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 4vh 4vw;
+    overflow: hidden;
+    justify-content: center;
+}
+.section1 .intro {
+    padding: 4vh 4vw;
+}
+.section1 .intro-txt h1 {
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 1;
+}
+.section1 .intro-txt p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin: 16px 0 32px;
+    opacity: 0.85;
+}
+.section1 .intro-txt .btn {
+    margin-top: 1rem;
+}
+.section1 .intro-img {
+    background: url(https://satoricyber.com/wp-content/uploads/Vector-1-7.svg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.intro-img img {
+    max-height: 70vh;
+    min-width: 30vw;
+}
+.social-icon {
+    display: inline-block;
+    margin-right: 16px;
+}
+.social-icon img {
+    width: 24px;
+}
+.btn {
+    padding: 8px 16px;
+    border: 0;
+    border-radius: 6px;
+    font-size: 1rem;
+    outline: none;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+}
+.btn-primary {
+    background: #4079c5;
+    color: #fff;
+}
+.btn-primary:hover, .btn-primary:hover {
+    background: #376cb2;
+    color: #fff;
+}
+
+@media (orientation: portrait) {
+    .section1 {
+        flex-wrap: wrap;
+    }
+}

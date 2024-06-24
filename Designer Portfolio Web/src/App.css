@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.highlight-container {
+    position: relative;
+    z-index: 1;
+}
+.highlight {
+    position: relative;
+    z-index: -1;
+}
+
+.highlight:before {
+    background-image: url(./highlight.png);
+    content: ' ';
+    position: absolute;
+    top: -0.1em;
+    left: -0.5em;
+    right: -0.5em;
+    bottom: -0.5em;
+    background-position: center;
+    background-size: 100% 400%;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+.highlight-circle {
+    position: relative;
+    z-index: -1;
+}
+
+.highlight-circle:before {
+    background-image: url(./highlight2.png);
+    content: ' ';
+    position: absolute;
+    top: -1em;
+    left: -1em;
+    right: -1em;
+    bottom: -1em;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
